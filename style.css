@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+}
+
+body {
+    background: top/contain url(./images/pattern-background-desktop.svg) #E0E8FF no-repeat;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Red Hat Display', sans-serif;
+    justify-content: center;
+}
+
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.card {
+    width: 450px;
+    min-height: 697px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.card-img {
+    background: center/cover url(./images/illustration-hero.svg);
+    flex: 1;
+    border-radius: 20px 20px 0 0;
+}
+
+.card-text {
+    flex: 2;
+    justify-content: space-between;
+    padding: 2.5rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+.card-text p:first-of-type {
+    color: hsl(224, 23%, 55%);
+    padding: 0 1rem;
+    line-height: 1.6rem;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.plan {
+    width: 100%;
+    justify-content: space-between;
+    background-color: hsl(225, 100%, 98%);
+    padding: 1.2rem;
+    border-radius: 11px;
+}
+
+.price-plan p:first-of-type{
+    color:hsl(223, 47%, 23%);
+    font-weight: 700;
+    padding: 0 1rem;
+}
+
+.price-plan p:last-of-type{
+    color: hsl(224, 23%, 55%);
+}
+
+.plan a:hover {
+    color: #766CF1;
+    text-decoration: none;
+}
+
+button {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 11px;
+    border: none;
+    background-color: hsl(245, 75%, 52%);
+    color: #fff;
+    font-weight: 800 ;
+    font-size: 15px;
+    box-shadow: 0px 10px 10px hsl(225, 100%, 94%);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #766CF1;
+}
+
+
+.cancel {
+    color: hsl(224, 23%, 55%);
+    font-weight: 800;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.cancel:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+.attribution {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+@media (max-width:500px) {
+    body {
+        background: top/contain url(./images/pattern-background-mobile.svg) #E0E8FF no-repeat;
+    }    
+    
+    .card {
+        max-width: 90%;
+        min-height: 567px;
+        margin-top: 2rem;  
+    }
+    .card-text {
+        padding: 2rem 1rem;
+    }
+    .card-text p:first-of-type {
+        padding: 0 1.5rem;
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    img.icon-plan {
+        margin-right: 1rem;
+    }
+}
